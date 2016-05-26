@@ -1,7 +1,108 @@
+@import url(smoothscrolling-master/example/css/style.css);
+@import url(css/main.css);
+body {
+  font-family: 'Raleway', sans-serif; }
+
+h1 {
+  font-weight: 800; }
+
+hr {
+  width: 60% !important;
+  height: 10px !important;
+  color: black !important; }
+
+.pt-5 {
+  padding-top: 5%; }
+
+.pt-10 {
+  padding-top: 10%; }
+
+.pb-5 {
+  padding-bottom: 5%; }
+
+.pb-10 {
+  padding-bottom: 10%; }
+
+.pd-0 {
+  padding: 0%; }
+
+.mt-10 {
+  margin-top: 10%; }
+
+.mt-5 {
+  margin-top: 5%; }
+
+footer {
+  background-color: #f0f0f1;
+  color: #848480; }
+
+body {
+  margin: 0; }
+
+.fondo-1, .fondo-2 {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .fondo-1 .capa, .fondo-2 .capa {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 18% 0%; }
+
+.fondo-1 {
+  background-image: url(../images/back-lock.jpg);
+  margin-top: -3%; }
+
+.fondo-2 {
+  background-image: url(../images/bg3.jpg); }
+
+#tex-alone .capa-color-grey, #pinturas .capa-color-grey {
+  position: relative; }
+#tex-alone .color-grey, #pinturas .color-grey {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  position: absolute; }
+  #tex-alone .color-grey:hover, #pinturas .color-grey:hover {
+    background-color: rgba(219, 219, 219, 0.8); }
+
+.fa-gitlab {
+  font-size: 50px; }
+
 .lateral-icon {
-	display: inline-block;
-	width: 80%;
-}
-.text-individual {
-	margin-top: 5%;
-}
+  width: 65%;
+  display: inline-block; }
+
+.fax {
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0%; }
+
+/* section abrazos*/
+.abrazos .col-md-3 {
+  border: 1px solid transparent;
+  width: 20%;
+  margin-left: 5%; }
+  .abrazos .col-md-3:hover {
+    border: 1px solid black;
+    -webkit-transition: color 800ms linear;
+    -moz-transition: color 800ms linear;
+    -ms-transition: color 800ms linear;
+    -o-transition: color 800ms linear;
+    transition: color 800ms linear; }
+
+.lista {
+  color: #848480;
+  background-color: #f0f0f1; }
+  .lista:hover {
+    background-color: pink; }
+  .lista .col-md-6 {
+    border-top: 1px solid #848480;
+    padding: 3% 0%; }
+    .lista .col-md-6:hover {
+      background-color: green; }
+  .lista .b-d {
+    border-right: 1px solid #848480; }
+
+/*# sourceMappingURL=main.css.map */

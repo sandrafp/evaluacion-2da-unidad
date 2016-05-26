@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+}
+.fondo-1, .fondo-2 {
+	@include fondo-fixed;
+  .capa {
+  	@include capa-color;
+	}
+}
+.fondo-1 {background-image: url(../images/back-lock.jpg);margin-top: -3%;}
+.fondo-2 {background-image: url(../images/bg3.jpg);}
+#tex-alone, #pinturas {
+	.capa-color-grey {position:relative;}
+	.color-grey {@include capa-hover;}
+}
+.fa-gitlab {font-size: 50px;}
+.lateral-icon {width: 65%;display: inline-block;}
+.fax {@include lista;}
+/* section abrazos*/
+.abrazos .col-md-3 {
+	border: 1px solid transparent;
+	width: 20%;
+	margin-left: 5%;
+	&:hover {
+		border: 1px solid black;
+		-webkit-transition: color 800ms linear;
+		-moz-transition: color 800ms linear;
+		-ms-transition: color 800ms linear;
+		-o-transition: color 800ms linear;
+		transition: color 800ms linear;
+	}
+}
+.lista {
+	color: $plomo-letras;
+	background-color: $plomo;
+	&:hover {
+		background-color: pink;
+	}
+	.col-md-6 {
+		@include border; 
+		padding: 3% 0%;
+		&:hover {background-color: green;}
+	}
+	.b-d {
+		border-right: 1px solid $plomo-letras;
+	}
+}
+
