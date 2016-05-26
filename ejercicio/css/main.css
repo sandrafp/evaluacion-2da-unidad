@@ -6,10 +6,26 @@ body {
 h1 {
   font-weight: 800; }
 
+a {
+  color: #848480; }
+
 hr {
   width: 60% !important;
   height: 10px !important;
   color: black !important; }
+
+.fa:hover {
+  color: black !important;
+  -moz-transform: scale(1.2) rotate(359deg);
+  -webkit-transform: scale(1.2) rotate(359deg);
+  -o-transform: scale(1.2) rotate(359deg);
+  -ms-transform: scale(1.2) rotate(359deg);
+  transform: scale(1.2) rotate(359deg); }
+
+#tex-alone {
+  color: #848480; }
+  #tex-alone h1 {
+    color: black; }
 
 .pt-5 {
   padding-top: 5%; }
@@ -42,11 +58,12 @@ body {
 .fondo-1, .fondo-2 {
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  width: 100%; }
   .fondo-1 .capa, .fondo-2 .capa {
     background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
-    padding: 18% 0%; }
+    padding: 15% 0%; }
 
 .fondo-1 {
   background-image: url(../images/back-lock.jpg);
@@ -65,14 +82,25 @@ body {
   z-index: 2;
   position: absolute; }
   #tex-alone .color-grey:hover, #pinturas .color-grey:hover {
-    background-color: rgba(219, 219, 219, 0.8); }
+    background-color: rgba(0, 0, 0, 0.7); }
+
+/* seccion tex-alone*/
+#tex-alone .text-individual {
+  position: relative; }
+#tex-alone i {
+  position: absolute; }
+
+#pinturas .fa {
+  margin-left: 3%;
+  color: #848480; }
 
 .fa-gitlab {
   font-size: 50px; }
 
 .lateral-icon {
-  width: 65%;
-  display: inline-block; }
+  width: 85%;
+  display: inline-block;
+  margin-left: 15%; }
 
 .fax {
   text-decoration: none;
@@ -80,29 +108,45 @@ body {
   padding-left: 0%; }
 
 /* section abrazos*/
+.abrazos .fa {
+  font-size: 30px; }
 .abrazos .col-md-3 {
-  border: 1px solid transparent;
-  width: 20%;
-  margin-left: 5%; }
-  .abrazos .col-md-3:hover {
-    border: 1px solid black;
-    -webkit-transition: color 800ms linear;
-    -moz-transition: color 800ms linear;
-    -ms-transition: color 800ms linear;
-    -o-transition: color 800ms linear;
-    transition: color 800ms linear; }
+  margin-top: 3%; }
 
 .lista {
-  color: #848480;
-  background-color: #f0f0f1; }
+  width: 95%;
+  border: 1px solid transparent;
+  color: #848480; }
   .lista:hover {
-    background-color: pink; }
-  .lista .col-md-6 {
-    border-top: 1px solid #848480;
-    padding: 3% 0%; }
-    .lista .col-md-6:hover {
-      background-color: green; }
+    background-color: #ffffff;
+    border: 1px solid black;
+    -webkit-transition: height 1200ms linear;
+    -moz-transition: height 1200ms linear;
+    -ms-transition: height 1200ms linear;
+    -o-transition: height 1200ms linear;
+    transition: height 1200ms linear; }
   .lista .b-d {
     border-right: 1px solid #848480; }
+  .lista .boton {
+    background-color: black; }
+  .lista .col-xs-6, .lista .col-xs-12 {
+    border-top: 1px solid #848480;
+    padding: 3% 0%; }
+    .lista .col-xs-6:hover, .lista .col-xs-12:hover {
+      background-color: whitesmoke; }
+
+.btn-default {
+  background-color: black;
+  color: #ffffff; }
+
+textarea {
+  min-height: 200px;
+  max-height: 400px;
+  max-width: 100%; }
+
+.aside {
+  color: #848480; }
+  .aside .fa {
+    margin-left: 5%; }
 
 /*# sourceMappingURL=main.css.map */

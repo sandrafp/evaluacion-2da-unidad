@@ -3,6 +3,7 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
+  width: 100%;
 }
 @mixin capa-color {
 	background-color: rgba(0,0,0,0.6);
@@ -26,8 +27,16 @@
 	padding-left:0%; 
 }
 @mixin hoverstatus {
-	background-color:  rgba(219,219,219,0.8);
+	background-color:  rgba(0,0,0,0.7);
 }
 @mixin border {
 	border-top: 1px solid $plomo-letras;
+}
+@mixin iconos-hover {
+	color: $oscuro !important;
+	-moz-transform: scale(1.2) rotate(359deg);
+	-webkit-transform: scale(1.2) rotate(359deg);
+	-o-transform: scale(1.2) rotate(359deg);
+	-ms-transform: scale(1.2) rotate(359deg);
+	transform: scale(1.2) rotate(359deg);
 }

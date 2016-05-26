@@ -3,9 +3,7 @@ body{
 }
 .fondo-1, .fondo-2 {
 	@include fondo-fixed;
-  .capa {
-  	@include capa-color;
-	}
+  .capa {@include capa-color;}
 }
 .fondo-1 {background-image: url(../images/back-lock.jpg);margin-top: -3%;}
 .fondo-2 {background-image: url(../images/bg3.jpg);}
@@ -13,36 +11,50 @@ body{
 	.capa-color-grey {position:relative;}
 	.color-grey {@include capa-hover;}
 }
+/* seccion tex-alone*/
+#tex-alone {
+	.text-individual{position:relative;}
+	i {position: absolute;}
+}
+#pinturas {
+	.fa {margin-left: 3%;color: $plomo-letras;}
+}
 .fa-gitlab {font-size: 50px;}
-.lateral-icon {width: 65%;display: inline-block;}
+.lateral-icon {width: 85%;display: inline-block;margin-left: 15%;}
 .fax {@include lista;}
 /* section abrazos*/
-.abrazos .col-md-3 {
-	border: 1px solid transparent;
-	width: 20%;
-	margin-left: 5%;
-	&:hover {
-		border: 1px solid black;
-		-webkit-transition: color 800ms linear;
-		-moz-transition: color 800ms linear;
-		-ms-transition: color 800ms linear;
-		-o-transition: color 800ms linear;
-		transition: color 800ms linear;
-	}
+.abrazos {
+	.fa {font-size:30px;}
+	.col-md-3 {margin-top: 3%;}
 }
 .lista {
+	width: 95%;
+	border: 1px solid transparent;
 	color: $plomo-letras;
-	background-color: $plomo;
 	&:hover {
-		background-color: pink;
+		background-color: $blanco;
+		border: 1px solid black;
+		-webkit-transition: height 1200ms linear;
+		-moz-transition: height 1200ms linear;
+		-ms-transition: height 1200ms linear;
+		-o-transition: height 1200ms linear;
+		transition: height 1200ms linear;
 	}
-	.col-md-6 {
+	.b-d {border-right: 1px solid $plomo-letras;}
+	.boton {background-color: $oscuro;}
+	.col-xs-6, .col-xs-12 {
 		@include border; 
 		padding: 3% 0%;
-		&:hover {background-color: green;}
+		&:hover {background-color: whitesmoke;}
 	}
-	.b-d {
-		border-right: 1px solid $plomo-letras;
-	}
+}
+.btn-default {
+	background-color: $oscuro;
+	color: $blanco;
+}
+textarea {
+	min-height: 200px;
+	max-height: 400px;
+	max-width: 100%;
 }
 

@@ -1,10 +1,13 @@
 body {font-family: 'Raleway', sans-serif;}
 h1 {font-weight: $weight-h;}
+a {color:$plomo-letras;}
 hr {
 	width:60% !important;
 	height:10px !important;
 	color: black !important;
 }
+.fa:hover {@include iconos-hover;}
+#tex-alone {color:$plomo-letras;h1{color:$oscuro;}}
 .pt-5 {padding-top: 5%;}
 .pt-10 {padding-top: 10%;}
 .pb-5 {padding-bottom: 5%;}
