@@ -121,6 +121,8 @@ body {
   border: 1px solid transparent;
   color: #848480; }
   .lista:hover {
+    background-color: #ffffff;
+    border: 1px solid black;
     -moz-transform: scale(1.1) rotate(360deg);
     -webkit-transform: scale(1.1) rotate(360deg);
     -o-transform: scale(1.1) rotate(360deg);
