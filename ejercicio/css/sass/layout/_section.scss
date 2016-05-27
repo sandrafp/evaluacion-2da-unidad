@@ -5,8 +5,8 @@ body{
 	@include fondo-fixed;
   .capa {@include capa-color;}
 }
-.fondo-1 {background-image: url(../images/back-lock.jpg);margin-top: -3%;}
-.fondo-2 {background-image: url(../images/bg3.jpg);}
+.fondo-1 {background-image: url(../images/aurora-borealis-from-space-wallpaper-4.jpg);margin-top: -3%;}
+.fondo-2 {background-image: url(../images/aurora-boreal-roja.jpg);}
 #tex-alone, #pinturas {
 	.capa-color-grey {position:relative;}
 	.color-grey {@include capa-hover;}
@@ -31,20 +31,12 @@ body{
 	width: 95%;
 	border: 1px solid transparent;
 	color: $plomo-letras;
-	&:hover {
-		background-color: $blanco;
-		border: 1px solid black;
-		-webkit-transition: height 1200ms linear;
-		-moz-transition: height 1200ms linear;
-		-ms-transition: height 1200ms linear;
-		-o-transition: height 1200ms linear;
-		transition: height 1200ms linear;
-	}
+	&:hover {@include prueba-hover}
 	.b-d {border-right: 1px solid $plomo-letras;}
 	.boton {background-color: $oscuro;}
 	.col-xs-6, .col-xs-12 {
 		@include border; 
-		padding: 3% 0%;
+		padding: 3% 10%;
 		&:hover {background-color: whitesmoke;}
 	}
 }
